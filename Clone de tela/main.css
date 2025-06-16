@@ -1,0 +1,154 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Layout flexível para garantir rodapé no final */
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1; /* Faz com que o conteúdo ocupe todo o espaço disponível */
+}
+
+/* Imagem de fundo full-screen */
+.background-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('c:\\Users\\User\\Downloads\\baixados (2).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Logotipo Marvel no topo */
+.marvel-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+.marvel-header img {
+    width: 150px;
+}
+
+/* Container de login centralizado */
+.login-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 30px 20px;
+    width: 350px;
+    text-align: center;
+    margin: 120px auto 40px;
+    z-index: 1;
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-logo img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.login-container h2 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+p1{
+    text-align: center;
+color: rgb(24, 22, 22);    
+}
+.login-footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    text-align: left;
+}
+
+.login-footer-text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.login-footer-subtext {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Logos da Disney dentro do login */
+.disney-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.disney-logos img {
+    width: 30px;
+}
+
+/* Rodapé fixado na parte inferior */
+.site-footer {
+    background-color:rgb(0, 34, 255);
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    width: 100%;
+}
